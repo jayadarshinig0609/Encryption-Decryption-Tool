@@ -202,6 +202,32 @@ File 'confidential.txt.encrypted' decrypted successfully as 'confidential.txt.de
 
    - Enter the password used during encryption.
 
+### **Graphics User Interface Options**
+![image](https://github.com/user-attachments/assets/599b0525-547b-4b3a-9d86-eb7e154c0042)
+
+The GUI provides the following features:
+
+- **Browse Files:**
+   - Easily browse your system to select the file you wish to encrypt or decrypt.
+
+- **Encrypt Button:**
+   - If you click Encrypt, the application will check if a secret.key exists in the root directory.
+   - If no secret.key is found, the system will automatically generate one and place it in the root directory.
+   - The selected file will then be encrypted using the generated or existing key.
+     
+- **Decrypt Button:**
+   - Clicking Decrypt will require the encrypted file and the secret.key or password used during encryption.
+
+- **Password-Based Encryption:**
+   - Users can opt to encrypt files using a password rather than a key. A password dialog box will appear when encrypting, ensuring a secure and user-friendly encryption process.
+
+### **Secret Key Generation**
+
+- **When encrypting a file via the GUI:**
+
+   - If a secret.key is not already present in the root directory, the application will automatically generate a new one and save it there.
+   - This secret key is essential for decrypting files later.
+
 ---
 
 ## Security Considerations
